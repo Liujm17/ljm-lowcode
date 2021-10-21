@@ -1,0 +1,75 @@
+.mainEdit {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 320px;
+    min-height: 100%;
+    background-color: white;
+    font-size: 12px;
+    border-left: solid 1px #dddddd;
+  
+    .empty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 200px;
+      margin-top: 300px;
+      font-size: 14px;
+    }
+  
+    .title {
+      height: 20%;
+      line-height: 60px;
+      font-size: 16px;
+      font-weight: 800;
+      text-align: center;
+      background: #ffe331;
+    }
+    .content{
+      height: 80%;
+      width: 100%;
+    }
+    .item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 8px 0;
+      margin-top: 15px;
+      padding: 4px;
+    }
+    .item:first-child {
+      margin-top: 30px;
+    }
+    label {
+      width: 100%;
+      color: black;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .itemRight {
+      margin-left: 10px;
+      width: 250px;
+      height: 38px;
+      border-radius: 2px;
+      border: 1px solid #d6dbe1;
+    }
+    .pouseAnimation {
+      margin: 8px;
+      padding: 10px;
+      background-color: red;
+      color: white;
+      font-weight: bold;
+    }
+  }
+  
+
+.ant-form-item{
+    display: flex;
+  }
+
+  .ant-form-item-label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }

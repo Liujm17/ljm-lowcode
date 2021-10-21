@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import {CanvasContext} from './Context'
+import Cmps from './layouts/Cmps/index';
+import Content from './layouts/Content/index';
+import Edit from './layouts/Edit/index'
+import './App.scss'
+
+const data={name:'ljm',age:25}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div id="app" className='mainapp'>
+      <CanvasContext.Provider value={data}>
+        <Cmps></Cmps>
+        <Content></Content>
+        <Edit></Edit>
+      </CanvasContext.Provider>
+  </div>
   );
 }
 
