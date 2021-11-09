@@ -29,6 +29,11 @@
       height: 80%;
       width: 100%;
     }
+    .handleContent{
+      width: 100%;
+      margin-top: 20px;
+      @include around;
+    }
     .item {
       display: flex;
       justify-content: flex-start;
@@ -73,3 +78,8 @@
     align-items: center;
     text-align: center;
   }
+
+
+.ant-modal-body{
+  @include center;
+}

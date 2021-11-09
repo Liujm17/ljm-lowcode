@@ -59,7 +59,7 @@ import PubSub from "pubsub-js";
 //         <div draggable onDrag={(e)=>ondrag(e)}  onDragStart={(e)=>handleDragStart(e)} onDragEnd={(e)=>handleDragEnd(e)} key={props.key} style={style} onClick={()=>changeStyle()}>测试文本</div>
 //     )
 //  }
-
+const Test='div'
 
 function TextComponent(props){
     const [style,setStyle]=useState(props.style)
@@ -76,7 +76,7 @@ function TextComponent(props){
            });
     }, []);
     return(
-        <div style={style} onClick={()=>changeStyle()}>测试文本</div>
+        <Test style={style} onClick={()=>changeStyle()}>测试文本</Test>
     )
  }
  

@@ -8,9 +8,9 @@ export const menus = [
   {
     desc: "文本",
     onlyKey:1,
-    page:<button>ljm文本测试</button>,
+    page:<div>ljm文本测试</div>,
     data: {
-      type: 'text',
+      type: 'div',
       value: "文本",
       iconfont:'iconfont icon-wenben',
       style: {
@@ -60,7 +60,7 @@ export const menus = [
   {
     desc: "图片",
     onlyKey:3,
-    page:<button>ljm图片测试</button>,
+    page:<img></img>,
     data: {
       type: 'img',
       iconfont:'iconfont icon-image',
